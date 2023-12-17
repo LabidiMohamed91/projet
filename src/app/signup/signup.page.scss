@@ -1,0 +1,36 @@
+/* signup.component.scss */
+ion-content {
+    --background: #f5edff; /* Light Purple */
+  }
+  
+  ion-toolbar {
+    --background: #ff66b2; /* Pink */
+    --color: #ffffff;
+  }
+  
+  ion-input {
+    margin-bottom: 16px;
+    border-radius: 8px; /* Add rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  ion-button {
+    margin-top: 16px;
+    --background: #bf5af2; /* Purple */
+    border-radius: 8px; /* Add rounded corners */
+  }
+  
+  .error-message {
+    color: #ff0000; /* Red */
+    margin-top: 16px;
+  }
+  
+  p {
+    margin-top: 16px;
+  }
+  
+  a {
+    color: #ff66b2; /* Pink */
+  }
+  

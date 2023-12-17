@@ -1,0 +1,36 @@
+/* home.component.scss */
+ion-content {
+    --background: #f5edff; /* Light Purple */
+  }
+  
+  ion-toolbar {
+    --background: #ff66b2; /* Pink */
+    --color: #ffffff;
+  }
+  
+  ion-list {
+    margin-top: 16px;
+  }
+  
+  ion-item {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  ion-thumbnail img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  ion-label {
+    margin-left: 16px;
+  }
+  
+  ion-searchbar {
+    --background: #ffffff;
+    --placeholder-color: #b3b3b3;
+  }
+  
+  ion-searchbar .searchbar-input {
+    color: #333333;
+  }
+  

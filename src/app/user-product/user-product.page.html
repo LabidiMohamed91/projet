@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="filterProducts($event)"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/add-product">
+        Add Product
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let product of filteredProducts">
+      <ion-thumbnail slot="start">
+        <img [src]="'assets/img/'+product.imageUrl" alt="Product Image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <!-- <p>Price: ${{ product.price }}</p> -->
+        <ion-button [routerLink]="['/product-details', product.id]">Details</ion-button>
+        <ion-button (click)="editProduct(product)">
+          <ion-icon name="create-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="danger" (click)="deleteProduct(product.id)">
+          <ion-icon name="trash-bin-outline"></ion-icon>
+        </ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

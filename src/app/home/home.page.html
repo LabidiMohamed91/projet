@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="filterProducts($event)"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button *ngIf="!authenticatedUser" routerLink="/login">
+        Login
+        <ion-icon name="log-in-outline"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="authenticatedUser" routerLink="/user-product">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let product of filteredProducts">
+      <ion-thumbnail slot="start">
+        <img [src]="'assets/img/'+product.imageUrl" alt="Product Image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <!-- <p>Price: ${{ product.price }}</p> -->
+        <ion-button [routerLink]="['/product-details', product.id]">Details</ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

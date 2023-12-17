@@ -1,0 +1,32 @@
+/* login.component.scss */
+ion-content {
+    --background: #f5edff; /* Light Purple */
+  }
+  
+  ion-toolbar {
+    --background: #ff66b2; /* Pink */
+    --color: #ffffff;
+  }
+  
+  ion-input {
+    margin-bottom: 16px;
+  }
+  
+  ion-button {
+    margin-top: 16px;
+    --background: #bf5af2; /* Purple */
+  }
+  
+  .error-message {
+    color: #ff0000; /* Red */
+    margin-top: 16px;
+  }
+  
+  p {
+    margin-top: 16px;
+  }
+  
+  a {
+    color: #ff66b2; /* Pink */
+  }
+  
