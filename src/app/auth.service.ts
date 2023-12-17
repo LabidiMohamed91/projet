@@ -13,9 +13,9 @@ export class AuthService {
 
   // Array of mock user data
   private users = [
-    { id: 1, fullname: 'User 1', password: 'password', email: 'user1@example.com' },
-    { id: 2, fullname: 'User 2', password: 'password', email: 'user2@example.com' },
-    { id: 3, fullname: 'User 3', password: 'password', email: 'user3@example.com' },
+    { id: 1, fullname: 'hamza', password: 'password', email: 'hamza@example.com' },
+    { id: 2, fullname: 'hama', password: 'password', email: 'hama@example.com' },
+    { id: 3, fullname: 'wael', password: 'password', email: 'wael@example.com' },
   ];
 
   // Constructor

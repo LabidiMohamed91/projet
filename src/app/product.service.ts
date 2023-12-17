@@ -7,11 +7,11 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class ProductService {
 
   private products = [
-    { id: 1, userId: 1, name: 'Product 1', description: 'Description for Product 1', imageUrl: 'im1.jpg', price: 18.99 },
-    { id: 2, userId: 2, name: 'abir', description: 'Description for Product 2', imageUrl: 'im2.jpg', price: 45.55 },
-    { id: 3, userId: 1, name: 'Product 3', description: 'Description for Product 3', imageUrl: 'im3.jpg', price: 77.99 },
-    { id: 4, userId: 3, name: 'Product 4', description: 'Description for Product 4', imageUrl: 'im4.jpg', price: 79.99 },
-    { id: 5, userId: 3, name: 'Product 5', description: 'Description for Product 5', imageUrl: 'im5.jpg', price: 78.99 },
+    { id: 1, userId: 1, name: 'annonce 1', description: 'Description for Product 1', imageUrl: 'im1.jpg', price: 18.99 },
+    { id: 2, userId: 2, name: 'annonce 2', description: 'Description for Product 2', imageUrl: 'im1.jpg', price: 45.55 },
+    { id: 3, userId: 1, name: 'annonce 3', description: 'Description for Product 3', imageUrl: 'im1.jpg', price: 77.99 },
+    { id: 4, userId: 3, name: 'annonce 4', description: 'Description for Product 4', imageUrl: 'im1.jpg', price: 79.99 },
+    { id: 5, userId: 3, name: 'annonce 5', description: 'Description for Product 5', imageUrl: 'im1.jpg', price: 78.99 },
   ];
 
   private productsSubject = new BehaviorSubject<any[]>([]);
